@@ -83,7 +83,7 @@ const searchForAlphabeticalIndex = ([stringToFindIndexForFirstLetter], alphabetA
             return recursiveBinarySearch(array, letter, midIndex + 1, endIndex);
         }
 
-        return false; // remove or comment out this line once you have un-commented the recursive calls above
+        // return false; // remove or comment out this line once you have un-commented the recursive calls above
     }
 
     // Invokes the recursiveBinarySearch you just defined, do not change the following
