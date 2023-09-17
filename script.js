@@ -55,7 +55,10 @@ const searchForAlphabeticalIndex = ([stringToFindIndexForFirstLetter], alphabetA
 
         console.log(startIndex, endIndex);
         // establish base case for not finding the letter in the given array, if you are on an iteration where the startIndex is greater than the endIndex, first set the binarySearchResults variable to be -1 and then return false
-
+        if (startIndex > endIndex) {
+            binarySearchResults = -1;
+            return false;
+        }
         //find middle index between the given start and end, hint: use Math.floor(your calculation for the middle index between start and end) as that rounds down to the nearest integer, you are not searching decimals
         // for example for array from 0 to 49 (length is 50), you calculate midpoint by writing let midIndex = Math.floor((0+49) / 2)
         /* CODE GOES HERE */
