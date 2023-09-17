@@ -68,7 +68,10 @@ const searchForAlphabeticalIndex = ([stringToFindIndexForFirstLetter], alphabetA
         // before returning true inside the if statement, write the following line of code: binarySearchCharacterIndex = midIndex; // this sets the variable up top to the index the character was found at so you can see the result in browser
         // hint: make sure to use == or === to check if you found the number, single equals sign is only used for assigning values to variables, not checking equality
         /* CODE GOES HERE */
-        
+        if (array[midIndex] === letter) {
+            binarySearchCharacterIndex = midIndex;
+            return true;
+        }
         // determine the if/else condition that should house these two return statements that recursively call the same function after splitting the data in one direction or another
         // note that just like 2 < 4 will evaluate to true, 'a' < 'b' will also evaluate true, javascript can compare letters just like numbers by their position in the alphabet
         // you need to write the if statement that will determine what condition needs to happen for you to search the lower half (start to middle) of the array rather than the upper half (middle to end) next
