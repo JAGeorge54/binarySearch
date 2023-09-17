@@ -75,13 +75,13 @@ const searchForAlphabeticalIndex = ([stringToFindIndexForFirstLetter], alphabetA
         // determine the if/else condition that should house these two return statements that recursively call the same function after splitting the data in one direction or another
         // note that just like 2 < 4 will evaluate to true, 'a' < 'b' will also evaluate true, javascript can compare letters just like numbers by their position in the alphabet
         // you need to write the if statement that will determine what condition needs to happen for you to search the lower half (start to middle) of the array rather than the upper half (middle to end) next
-        // if () {
-        //     // this return statement will continue the recursion by narrowing our search to the lower (start to middle) portion of the dataset
-        //     return recursiveBinarySearch(array, letter, startIndex, midIndex - 1);
-        // } else {
-        //     // this return statement will continue the recursion by narrowing our search to the upper (middle to end) portion of the dataset
-        //     return recursiveBinarySearch(array, letter, midIndex + 1, endIndex);
-        // }
+        if (letter < array[midIndex]) {
+            // this return statement will continue the recursion by narrowing our search to the lower (start to middle) portion of the dataset
+            return recursiveBinarySearch(array, letter, startIndex, midIndex - 1);
+        } else {
+            // this return statement will continue the recursion by narrowing our search to the upper (middle to end) portion of the dataset
+            return recursiveBinarySearch(array, letter, midIndex + 1, endIndex);
+        }
 
         return false; // remove or comment out this line once you have un-commented the recursive calls above
     }
