@@ -11,7 +11,7 @@ the recursiveBinarySearch code block. You will need to handle cases for:
 /**
  * Function that generates an array of letters ranging from charA to charZ. The passed in values don't necessarily need to be 'a' and 'z' but for this activity they should always be the default values.
  * @param charA, beginning of the range to generate the alphabetical array
- * @param charZ, end of the range for alphabetical array generated
+ * @param charZ, end of the range for alphabetawical array generated
  */
 const generateAlphabetArray = (charA = 'a', charZ = 'z') => {
     let array = [], j = charZ.charCodeAt(0);
