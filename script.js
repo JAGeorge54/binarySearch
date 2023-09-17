@@ -115,4 +115,5 @@ const searchForAlphabeticalIndex = ([stringToFindIndexForFirstLetter], alphabetA
 
     return binarySearchResults;
 }
+searchForAlphabeticalIndex('Title Here');
 console.log("h")
